@@ -1,16 +1,190 @@
 ---
-
+import "../styles/global.css";
+import { YouTube } from "@astro-community/astro-embed-youtube";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body class="bg-[var(--background-color)]">
+    <main class="">
+      <section class="mt-7 mb-5">
+        <h3 class="relative text-center text-3xl font-bold">
+          <span class="section__title--neon">ON</span>
+          <span class="text-white">STREAM</span>
+        </h3>
+      </section>
+
+      <section class="w-9/10 relative mx-auto h-[500px] mt-0 mb-10 flex flex-col items-end justify-end">
+        <div id="banner_home" class="rounded-2xl w-full flex flex-row">
+          <div class="w-1/3 flex flex-col justify-center ms-5 mx-auto h-[500px]">
+            <h1 class="text-white w-full px-5 text-6xl font-bold text-end me-17 mt-10 z-20">
+              <span>ALEINAD</span>
+              <span>#PIZZA</span>
+            </h1>
+
+            <div class="w-auto flex justify-center items-center gap-5 mt-1 p-5 z-20">
+              <button class="bg-[var(--primary-color)] text-white w-1/2 flex flex-row justify-center items-center gap-2.5 rounded-xl h-9">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-youtube"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                  ></path>
+                </svg>
+                Ver canal
+              </button>
+              <button
+                class="bg-[var(--primary-color)] text-white w-1/2 flex flex-row justify-center items-center gap-2.5 rounded-xl h-9"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-discord text-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"
+                  ></path>
+                </svg>
+                Discord
+              </button>
+            </div>
+          </div>
+        </div>
+        <img
+          id="aleinad__banner-home"
+          class="absolute bottom-0 -right-10"
+          src="/public/images/aleinad_banner_home.png"
+          alt="aleinad banner"
+          width="450px"
+        />
+      </section>
+
+      <header>
+        <nav class="">
+          <ul class="bg-[var(--primary-color)] flex flex-row gap-4 justify-center items-center text-white h-10 font-bold text-lg w-full">
+            <li class="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+              </svg>  
+            </li>
+            <li class="transition-all hover:text-xl cursor-pointer ease-in hover:bg-[var(--secondary-color)] hover:px-7 h-full flex justify-center items-center">Horario</li>
+            <li>Galeria</li>
+            <li>Donar</li>
+            <li>Redes</li>
+            <li>Pizzatubers</li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="mods" class="px-50 my-10 h-auto relative">
+        <h2 class="mb-2 text-3xl text-center font-bold text-white">
+          Moderadores
+        </h2>
+        <p class="text-center px-50 text-white">Aqui puedes encontrar a los moderadores de Youtube y Discord</p>
+        <div class="mt-5 flex gap-10 justify-center overflow-hidden w-3xl mx-auto flex-wrap">
+          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
+            <img
+              class="rounded-4xl"
+              src="/public/images/drefdu.jpg"
+              alt="user png"
+              height="60px"
+              width="60px"
+            />
+            <p class="text-center">Drefdu</p>
+          </div>
+          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
+            <img
+              class="rounded-4xl"
+              src="/public/images/drefdu.jpg"
+              alt="user png"
+              height="60px"
+              width="60px"
+            />
+            <p class="text-center">Drefdu</p>
+          </div>
+          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
+            <img
+              class="rounded-4xl"
+              src="/public/images/drefdu.jpg"
+              alt="user png"
+              height="60px"
+              width="60px"
+            />
+            <p class="text-center">Drefdu</p>
+          </div>
+          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
+            <img
+              class="rounded-4xl"
+              src="/public/images/drefdu.jpg"
+              alt="user png"
+              height="60px"
+              width="60px"
+            />
+            <p class="text-center">Drefdu</p>
+          </div>
+          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
+            <img
+              class="rounded-4xl"
+              src="/public/images/drefdu.jpg"
+              alt="user png"
+              height="60px"
+              width="60px"
+            />
+            <p class="text-center">Drefdu</p>
+          </div>
+          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
+            <img
+              class="rounded-4xl"
+              src="/public/images/drefdu.jpg"
+              alt="user png"
+              height="60px"
+              width="60px"
+            />
+            <p class="text-center">Drefdu</p>
+          </div>
+          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
+            <img
+              class="rounded-4xl"
+              src="/public/images/drefdu.jpg"
+              alt="user png"
+              height="60px"
+              width="60px"
+            />
+            <p class="text-center">Drefdu</p>
+          </div>
+        </div>
+        <img class="absolute left-0 bottom-0" src="/public/images/espiral.png" alt="espiral" width="125px">
+        <img class="absolute right-0 top-0" src="/public/images/espiral_3.png" alt="espiral" width="125px">
+      </section>
+
+      <section class="my-10 h-auto w-full px-20 flex items-center justify-center flex-col">
+        <h2 class="mb-2 text-3xl text-center font-bold text-white">Horarios</h2>
+        <p class="text-center px-50 mb-4 text-white">
+          El horario esta sujeto a cambios
+        </p>
+
+        <YouTube
+          id="9cnDD_k-b-s"
+          class="w-full"
+        />
+
+        <img src="/public/images/aleinad_cat.gif" alt="" width="200px">
+
+      </section>
+    </main>
+  </body>
 </html>
