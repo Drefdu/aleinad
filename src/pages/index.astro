@@ -1,6 +1,96 @@
 ---
 import "../styles/global.css";
 import { YouTube } from "@astro-community/astro-embed-youtube";
+import Section from '../components/Section.astro'
+import ModCard from '../components/ModCard.astro'
+import Header from '../components/Header.astro'
+
+const admin = {
+    name: "Aleinad #Pizza",
+    rol: "Pizza Admin",
+    discord: true,
+    youtube: true,
+    crown: true,
+    avatar: "/public/images/drefdu.jpg",
+    alt: 'Avatar de Aleinad',
+    admin: true
+}
+
+const moders = [
+  {
+    name: "Twicho",
+    rol: "Comandante Pepperoni",
+    discord: true,
+    youtube: true,
+    crown: false,
+    avatar: "/public/images/drefdu.jpg",
+    alt: 'Avatar de Aleinad'
+  },
+  {
+    name: "Naiko",
+    rol: "Comandante Pepperoni",
+    discord: true,
+    youtube: true,
+    crown: false,
+    avatar: "/public/images/drefdu.jpg",
+    alt: 'Avatar de Aleinad'
+  },
+  {
+    name: "Courier9",
+    rol: "Patrulla Pepperoni",
+    discord: true,
+    youtube: true,
+    crown: false,
+    avatar: "/public/images/drefdu.jpg",
+    alt: 'Avatar de Aleinad'
+  },
+  {
+    name: "Jave",
+    rol: "Patrulla Pepperoni",
+    discord: true,
+    youtube: true,
+    crown: false,
+    avatar: "/public/images/drefdu.jpg",
+    alt: 'Avatar de Aleinad'
+  },
+  {
+    name: "Kira",
+    rol: "Patrulla Pepperoni",
+    discord: true,
+    youtube: true,
+    crown: false,
+    avatar: "/public/images/drefdu.jpg",
+    alt: 'Avatar de Aleinad'
+  },
+  {
+    name: "Novasky",
+    rol: "Patrulla Pepperoni",
+    discord: true,
+    youtube: true,
+    crown: false,
+    avatar: "/public/images/drefdu.jpg",
+    alt: 'Avatar de Aleinad'
+  },
+  {
+    name: "Felix",
+    rol: "Patrulla Pepperoni",
+    discord: true,
+    youtube: true,
+    crown: false,
+    avatar: "/public/images/drefdu.jpg",
+    alt: 'Avatar de Aleinad'
+  },
+  {
+    name: "Hideky",
+    rol: "Patrulla Pepperoni",
+    discord: true,
+    youtube: true,
+    crown: false,
+    avatar: "/public/images/drefdu.jpg",
+    alt: 'Avatar de Aleinad'
+  }
+]
+
 ---
 
 <html lang="en">
@@ -11,16 +101,18 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
+
   <body class="bg-[var(--background-color)]">
+    <Header></Header>
     <main class="">
-      <section class="mt-7 mb-5">
+      <!-- <section class="mt-7 mb-5">
         <h3 class="relative text-center text-3xl font-bold">
           <span class="section__title--neon">ON</span>
           <span class="text-white">STREAM</span>
         </h3>
-      </section>
+      </section>   -->
 
-      <section class="w-9/10 relative mx-auto h-[500px] mt-0 mb-10 flex flex-col items-end justify-end">
+      <section class="w-9/10 relative mx-auto h-[500px] mt-15 mb-10 flex flex-col items-end justify-end">
         <div id="banner_home" class="rounded-2xl w-full flex flex-row">
           <div class="w-1/3 flex flex-col justify-center ms-5 mx-auto h-[500px]">
             <h1 class="text-white w-full px-5 text-6xl font-bold text-end me-17 mt-10 z-20">
@@ -64,7 +156,7 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
             </div>
           </div>
         </div>
-        <img
+        <img 
           id="aleinad__banner-home"
           class="absolute bottom-0 -right-10"
           src="/public/images/aleinad_banner_home.png"
@@ -73,118 +165,26 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
         />
       </section>
 
-      <header>
-        <nav class="">
-          <ul class="bg-[var(--primary-color)] flex flex-row gap-4 justify-center items-center text-white h-10 font-bold text-lg w-full">
-            <li class="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
-              </svg>  
-            </li>
-            <li class="transition-all hover:text-xl cursor-pointer ease-in hover:bg-[var(--secondary-color)] hover:px-7 h-full flex justify-center items-center">Horario</li>
-            <li>Galeria</li>
-            <li>Donar</li>
-            <li>Redes</li>
-            <li>Pizzatubers</li>
-          </ul>
-        </nav>
-      </header>
+      <Section title="Videojuegos" subtext="Videojuegos que me gustan osi"></Section>
 
-      <section id="mods" class="px-50 my-10 h-auto relative">
-        <h2 class="mb-2 text-3xl text-center font-bold text-white">
-          Moderadores
-        </h2>
-        <p class="text-center px-50 text-white">Aqui puedes encontrar a los moderadores de Youtube y Discord</p>
-        <div class="mt-5 flex gap-10 justify-center overflow-hidden w-3xl mx-auto flex-wrap">
-          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
-            <img
-              class="rounded-4xl"
-              src="/public/images/drefdu.jpg"
-              alt="user png"
-              height="60px"
-              width="60px"
-            />
-            <p class="text-center">Drefdu</p>
+      <Section title="Horario" subtext="Directos todos los domingos exepto si hay tarea jsjsjsjs"></Section>
+
+      <Section title="Moderadores" subtext="Moderadores de Discord y Youtube"
+      >
+        <div class="flex justify-center items-center w-full h-full">
+          <div class="w-1/3 flex justify-center items-center">
+            <ModCard item={ admin }></ModCard>
           </div>
-          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
-            <img
-              class="rounded-4xl"
-              src="/public/images/drefdu.jpg"
-              alt="user png"
-              height="60px"
-              width="60px"
-            />
-            <p class="text-center">Drefdu</p>
-          </div>
-          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
-            <img
-              class="rounded-4xl"
-              src="/public/images/drefdu.jpg"
-              alt="user png"
-              height="60px"
-              width="60px"
-            />
-            <p class="text-center">Drefdu</p>
-          </div>
-          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
-            <img
-              class="rounded-4xl"
-              src="/public/images/drefdu.jpg"
-              alt="user png"
-              height="60px"
-              width="60px"
-            />
-            <p class="text-center">Drefdu</p>
-          </div>
-          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
-            <img
-              class="rounded-4xl"
-              src="/public/images/drefdu.jpg"
-              alt="user png"
-              height="60px"
-              width="60px"
-            />
-            <p class="text-center">Drefdu</p>
-          </div>
-          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
-            <img
-              class="rounded-4xl"
-              src="/public/images/drefdu.jpg"
-              alt="user png"
-              height="60px"
-              width="60px"
-            />
-            <p class="text-center">Drefdu</p>
-          </div>
-          <div class="bg-gradient-to-tl from-[#6f38b3] via-[#a55ffe] to-[#a892ff] text-white transition-all font-bold hover:size-32 size-30 flex flex-col justify-center items-center rounded-2xl">
-            <img
-              class="rounded-4xl"
-              src="/public/images/drefdu.jpg"
-              alt="user png"
-              height="60px"
-              width="60px"
-            />
-            <p class="text-center">Drefdu</p>
+          <div class="w-2/3 flex flex-wrap gap-10 justify-center items-center">
+            {moders.map(item => (
+              <ModCard item={item}></ModCard>
+            ))}
           </div>
         </div>
-        <img class="absolute left-0 bottom-0" src="/public/images/espiral.png" alt="espiral" width="125px">
-        <img class="absolute right-0 top-0" src="/public/images/espiral_3.png" alt="espiral" width="125px">
-      </section>
+      </Section>
 
-      <section class="my-10 h-auto w-full px-20 flex items-center justify-center flex-col">
-        <h2 class="mb-2 text-3xl text-center font-bold text-white">Horarios</h2>
-        <p class="text-center px-50 mb-4 text-white">
-          El horario esta sujeto a cambios
-        </p>
+      <Section title="Modelo" subtext="Diseños de mi personaje osi osi"></Section>
 
-        <YouTube
-          id="9cnDD_k-b-s"
-          class="w-full"
-        />
-
-        <img src="/public/images/aleinad_cat.gif" alt="" width="200px">
-
-      </section>
     </main>
   </body>
 </html>

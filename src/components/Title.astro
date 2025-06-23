@@ -1,0 +1,15 @@
+---
+interface Props {
+    title: string;
+    subtext: string;
+}
+
+const { title, subtext } = Astro.props;
+---
+
+<div class="flex flex-col justify-center items-center my-15">
+    <h2 class="lg:text-3xl title font-bold bg-clip-text text-transparent inline-block bg-linear-to-r from-[var(--tertiary-color)] to-[var(--violet-color)] text-shadow-violet-950">
+        {title}
+    </h2>
+    <p class="subtext text-[var(--normal-text)] lg:text-md subtext">{subtext}</p>
+</div>

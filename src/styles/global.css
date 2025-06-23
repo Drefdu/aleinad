@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     font-family: "Roboto", sans-serif;
@@ -9,8 +10,16 @@
 
 :root {
     --background-color: #000000;
-    --primary-color: #8800ff;
+    --primary-color: #8800FF;
 	--secondary-color: #2f0f4b;
+	--tertiary-color: #D28CEE;
+	--violet-color: #6635FA;
+	--header-color: #09090a;
+	--normal-text: #c7b2cf;
+	--card-color: #1b1225;
+	--admin: #ffcb00;
+	--comandante: #ff7700;
+	--patrulla: #0098ff;
 	--translucent-color: rgba(185, 75, 225, 0.9);
 }
 
@@ -33,9 +42,106 @@
     filter: drop-shadow(10px -10px 12px rgb(130, 42, 231));
 }
 
+
 .section__title--neon {
     animation: rainbow 10s ease-out;
     animation-iteration-count: infinite;
+}
+
+.title {
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.subtext {
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.navbar__items {
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.navbar__item {
+	padding-inline: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	transition: all 200ms ease-in-out;
+}
+
+.navbar__item--active {
+	background-color: var(--primary-color);
+	box-shadow: 3px 3px 3px 0px rgba(117,20,217,0.75);
+	-webkit-box-shadow: 3px 3px 3x 0px rgba(117,20,217,0.75);
+	-moz-box-shadow: 3px 3px 3px 0px rgba(117,20,217,0.75);
+}
+
+.navbar__item:hover {
+	background-color: var(--primary-color);
+	padding-inline: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 0px rgba(117,20,217,0.75);
+	-webkit-box-shadow: 3px 3px 3x 0px rgba(117,20,217,0.75);
+	-moz-box-shadow: 3px 3px 3px 0px rgba(117,20,217,0.75);
+}
+
+.navbar__item--active:hover {
+	opacity: 0.8;
+	box-shadow: 00px 0px 0px 0px rgba(117,20,217,0.75);
+	-webkit-box-shadow: 0px 0px 0x 0px rgba(117,20,217,0.75);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(117,20,217,0.75)
+}
+
+
+.admin__tag {
+	background-color: var(--admin);
+}
+
+.comandante__tag {
+	background-color: var(--comandante);
+}
+
+.patrulla__tag {
+	background-color: var(--patrulla);
+}
+
+.admin__card {
+	/* From https://css.glass */
+	background: rgba(194, 174, 217, 0);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	transition: transform 300ms ease;
+	place-content: top;
+	place-items: top;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* .admin__card:hover {
+	transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+} */
+
+
+.gradient {
+  background: radial-gradient(
+    circle 600px at center,
+    rgba(104, 38, 184, 1) 0%,
+    rgba(0, 0, 0, 1) 58%
+  );
+  background-position: center;
 }
 
 @keyframes rainbow{

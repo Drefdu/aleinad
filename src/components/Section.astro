@@ -1,0 +1,19 @@
+---
+import { string } from 'astro:schema'
+import Title from './Title.astro'
+
+interface Props {
+    title: string;
+    subtext: string;
+}
+
+const { title, subtext } = Astro.props;
+---
+
+
+<section class="w-full">
+    <div class="lg:mx-40">
+        <Title title={title} subtext={subtext}></Title>
+        <slot></slot>
+    </div>
+</section>
