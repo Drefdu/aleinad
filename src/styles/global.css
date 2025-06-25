@@ -24,7 +24,7 @@
 }
 
 #banner_home {
-    background-image: url('/public/images/habitacion_aleinad_normal.png');
+    background-image: url('/images/habitacion_aleinad_normal.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
