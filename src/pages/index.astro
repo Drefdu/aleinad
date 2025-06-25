@@ -4,6 +4,7 @@ import { YouTube } from "@astro-community/astro-embed-youtube";
 import Section from '../components/Section.astro'
 import ModCard from '../components/ModCard.astro'
 import Header from '../components/Header.astro'
+import Models from '../components/vue/Models.vue'
 
 const admin = {
     name: "Aleinad #Pizza",
@@ -105,12 +106,12 @@ const moders = [
   <body class="bg-[var(--background-color)]">
     <Header></Header>
     <main class="">
-      <!-- <section class="mt-7 mb-5">
+      <section class="mt-7 mb-5">
         <h3 class="relative text-center text-3xl font-bold">
           <span class="section__title--neon">ON</span>
           <span class="text-white">STREAM</span>
         </h3>
-      </section>   -->
+      </section>  
 
       <section class="w-9/10 relative mx-auto h-[500px] mt-15 mb-10 flex flex-col items-end justify-end">
         <div id="banner_home" class="rounded-2xl w-full flex flex-row">
@@ -183,7 +184,9 @@ const moders = [
         </div>
       </Section>
 
-      <Section title="Modelo" subtext="Diseños de mi personaje osi osi"></Section>
+      <Section title="Modelo" subtext="Diseños de mi personaje osi osi">
+        <Models></Models>
+      </Section>
 
     </main>
   </body>

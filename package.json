@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@astro-community/astro-embed-youtube": "^0.5.6",
+    "@astrojs/vue": "^5.1.0",
     "@justinribeiro/lite-youtube": "^1.8.2",
     "@tailwindcss/vite": "^4.1.8",
     "astro": "^5.9.1",
     "bootstrap-icons": "^1.13.1",
-    "tailwindcss": "^4.1.8"
+    "tailwindcss": "^4.1.8",
+    "vue": "^3.5.17"
   }
 }
