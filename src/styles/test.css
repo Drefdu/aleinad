@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+    --background-color: #000000;
+    --primary: #8800FF;
+	--secondary-color: #2f0f4b;
+	--tertiary-color: #D28CEE;
+	--violet-color: #6635FA;
+	--header-color: #09090a;
+	--normal-text: #c7b2cf;
+	--card-color: #1b1225;
+	--admin: #ffcb00;
+	--comandante: #ff7700;
+	--patrulla: #0098ff;
+	--translucent-color: rgba(185, 75, 225, 0.9);
+
+    --glass-effect: blur(12px);
+
+}
+
+
+.body__background-gradient {
+    background-image: radial-gradient(circle 500px at 50% 100px, rgba(139,92,246,0.4), transparent);
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Navigation Bar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: var(--glass-effect);
+    -webkit-backdrop-filter: var(--glass-effect); /* For Safari */
+    z-index: 1000;
+    transition: var(--transition-normal);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar.scrolled {
+  padding: 0.5rem 0;
+  background-color: rgba(17, 24, 39, 0.9); /* More opaque when scrolled */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Mobile Navigation */
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#mobile-menu.open {
+  max-height: 300px; /* Adjust based on your menu height */
+}
+
+#mobile-menu-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* For the hamburger animation */
+#mobile-menu-button.active #line1 {
+  transform: translate(-50%, -50%) rotate(45deg);
+  transform-origin: center;
+}
+
+#mobile-menu-button.active #line2 {
+  opacity: 0;
+}
+
+#mobile-menu-button.active #line3 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transform-origin: center;
+}
+
+#line1, #line2, #line3 {
+  transition: transform 0.3s ease, opacity 0.2s ease, background-color 0.3s ease;
+  transform-origin: center;
+}
