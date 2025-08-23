@@ -98,9 +98,21 @@
 	opacity: 0.8;
 	box-shadow: 00px 0px 0px 0px rgba(117,20,217,0.75);
 	-webkit-box-shadow: 0px 0px 0x 0px rgba(117,20,217,0.75);
-	-moz-box-shadow: 0px 0px 3px 0px rgba(117,20,217,0.75)
+	-moz-box-shadow: 0px 0px 3px 0px rgba(117,20,217,0.75);
 }
 
+.section {
+	/* background-image: url('/images/gradient_background.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain; */
+}
+
+.background-gradient {
+	background-image: radial-gradient(circle at 50% 100%, rgba(117,20,217,0.75) 0%, transparent 60%),
+    radial-gradient(circle at 50% 100%, rgba(107, 41, 249, 0.4) 0%, transparent 70%),
+	radial-gradient(circle at 50% 100%, rgba(194, 181, 208, 0.3) 0%, transparent 80%);
+}
 
 .admin__tag {
 	background-color: var(--admin);
@@ -144,41 +156,121 @@
   background-position: center;
 }
 
+.carousel__container {
+	width: 100%;
+	height: 480px;
+	display: flex;
+	justify-content: center;
+	/*   gap: 30px; */
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card__model {
+	background-color: rgba(39, 36, 36, 0.5);
+	position: absolute;
+	transition: transform 0.6s ease-out, opacity 0.5s ease-in-out;	
+}
+
+.card__model.center {
+	z-index: 50;
+	/* left: auto;
+	right: auto; */
+	transform: translateX(0%) scale(1) translateZ(0);	
+}
+
+.card__model.left {
+	z-index: 50;
+	transform: translateX(-350px) scale(0.6) translateZ(-100px);
+	
+}
+
+.card__model.right {
+	z-index: 50;
+	transform: translateX(350px) scale(0.6) translateZ(-100px);
+}
+
+#card-model__next {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	bottom: 50%;
+	right: 0%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background-color: var(--card-color);
+	cursor: pointer;
+	transition: all 300ms ease-in;
+}
+
+#card-model__next:hover {
+	background-color: var(--primary-color);
+}
+
+#card-model__previous {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	bottom: 50%;
+	left: 0%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background-color: var(--card-color);
+	cursor: pointer;
+	transition: all 300ms ease-in;
+}
+
+#card-model__previous:hover {
+	background-color: var(--primary-color);
+}
+
+.hidden {
+  opacity: 0;
+  transform: scale(0.5) translateZ(0);
+}
+
 @keyframes rainbow{
-		100%,0%{
-			color: rgb(255,0,0);
-		}
-		8%{
-			color: rgb(255,127,0);
-		}
-		16%{
-			color: rgb(255,255,0);
-		}
-		25%{
-			color: rgb(127,255,0);
-		}
-		33%{
-			color: rgb(0,255,0);
-		}
-		41%{
-			color: rgb(0,255,127);
-		}
-		50%{
-			color: rgb(0,255,255);
-		}
-		58%{
-			color: rgb(0,127,255);
-		}
-		66%{
-			color: rgb(0,0,255);
-		}
-		75%{
-			color: rgb(127,0,255);
-		}
-		83%{
-			color: rgb(255,0,255);
-		}
-		91%{
-			color: rgb(255,0,127);
-		}
+	100%,0%{
+		color: rgb(255,0,0);
+	}
+	8%{
+		color: rgb(255,127,0);
+	}
+	16%{
+		color: rgb(255,255,0);
+	}
+	25%{
+		color: rgb(127,255,0);
+	}
+	33%{
+		color: rgb(0,255,0);
+	}
+	41%{
+		color: rgb(0,255,127);
+	}
+	50%{
+		color: rgb(0,255,255);
+	}
+	58%{
+		color: rgb(0,127,255);
+	}
+	66%{
+		color: rgb(0,0,255);
+	}
+	75%{
+		color: rgb(127,0,255);
+	}
+	83%{
+		color: rgb(255,0,255);
+	}
+	91%{
+		color: rgb(255,0,127);
+	}
 }

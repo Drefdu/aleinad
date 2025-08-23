@@ -1,0 +1,70 @@
+---
+
+---
+
+<div class="carousel__container">
+  <div class="w-90 rounded-2xl p-4 card__model">
+    <img class="object-cover" src="/images/modelo_1.png" />
+  </div>
+  <div class="w-90 rounded-2xl p-4 card__model">
+    <img class="object-cover" src="/images/modelo_2.png" />
+  </div>
+  <div class="w-90 rounded-2xl p-4 card__model">
+    <img class="object-cover" src="/images/modelo_3.png" />
+  </div>
+  <button id="card-model__next">
+    <svg class="text-[var(--normal-text)] size-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path d="M7.38 21.01c.49.49 1.28.49 1.77 0l8.31-8.31a.996.996 0 0 0 0-1.41L9.15 2.98c-.49-.49-1.28-.49-1.77 0s-.49 1.28 0 1.77L14.62 12l-7.25 7.25c-.48.48-.48 1.28.01 1.76z" fill="currentColor"></path></svg>
+  </button>
+  <button id="card-model__previous">
+    <svg class="text-[var(--normal-text)] size-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path d="M16.88 2.88a1.25 1.25 0 0 0-1.77 0L6.7 11.29a.996.996 0 0 0 0 1.41l8.41 8.41c.49.49 1.28.49 1.77 0s.49-1.28 0-1.77L9.54 12l7.35-7.35c.48-.49.48-1.28-.01-1.77z" fill="currentColor"></path></svg>
+  </button>
+</div>
+
+<script>
+  let cards = document.querySelectorAll(".card__model");
+  let nextButton = document.getElementById("card-model__next");
+  let previousButton = document.getElementById("card-model__previous");
+  let currentIndex : number;
+  let isAnimating : boolean = false;
+
+
+  function updateCarousel(index: number) {
+    if (isAnimating) return;
+    isAnimating = true;
+    currentIndex = (index + cards.length) % cards.length;
+
+    cards.forEach((card, i) => {
+      const offset = (i - currentIndex + cards.length) % cards.length;
+
+      card.classList.remove("center", "left", "right", "hidden");
+
+      if (offset === 0) {
+        card.classList.add("center");
+      } else if (offset === 1) {
+        card.classList.add("right");
+      } else if (offset === cards.length - 1) {
+        card.classList.add("left");
+      } else {
+        card.classList.add("hidden");
+      }
+    });
+
+    setTimeout(() => {
+        isAnimating = false;
+    }, 500);
+  }
+
+  if (nextButton) {
+    nextButton.addEventListener("click", () => {
+        updateCarousel(currentIndex + 1);
+    });
+  }
+
+  if (previousButton) {
+    previousButton.addEventListener("click", () => {
+        updateCarousel(currentIndex - 1);
+    });
+  }
+
+  updateCarousel(0);
+</script>
