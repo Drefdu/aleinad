@@ -1,50 +1,51 @@
 ---
 
 ---
-
-<nav id="navbar" class="fixed top-0 left-0 right-0 bg-gray-900/30 backdrop-blur-lg  z-50 transition-all duration-300">
-    <div class="container mx-auto px-6 py-3">
-        <div class="flex items-center justify-between">
+<nav id="navbar" class="fixed top-0 left-0 right-0 bg-[var(--electric-violet)]/20 border-1 border-b-[var(--electric-violet)] backdrop-blur-lg z-50 transition-all duration-300">
+    <div class="container mx-auto px-6 h-full">
+        <div class="flex items-center justify-center relative h-full max-h-[70px] border-1 border-transparent border-b-[var(--electric-violet)]/40">
             <!-- Logo -->
             <div class="text-white">
                 Aleinad #Pizza
             </div>
 
-            <!-- Desktop Navigation -->
-            <div class="hidden md:flex items-center space-x-1">
-                <a href="#" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Inicio</a>
-                <a href="#" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Horario</a>
-                <a href="#" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Contacto</a>
-                <a href="#" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Galeria</a>
-                <a href="#" class="nav-link text-gray-300 hover:text-cyan-400 px-4 py-2 rounded-md transition-colors duration-200">Donar</a>
-            </div>
-
-            <!-- Mobile Navigation Button -->
-            <div class="flex md:hidden">
-                <button id="mobile-menu-button" class="relative w-10 h-10 focus:outline-none group" aria-label="Toggle menu">
-                    <div class="absolute w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
-                        <span class="block h-1 w-6 bg-[var(--primary)] mb-1 transform transition duration-300 ease-in-out" id="line1"></span>
-                        <span class="block h-1 w-6 bg-[var(--primary)] mb-1 transform transition duration-300 ease-in-out" id="line2"></span>
-                        <span class="block h-1 w-6 bg-[var(--primary)] transform transition duration-300 ease-in-out" id="line3"></span>
-                    </div>
+            <!-- Menu Button -->
+            <div class="absolute right-0 h-full w-6 border-0">
+                <button id="menu__buton" class="size-full" aria-label="Toggle menu">
+                    <span id="line1" class="block h-1 w-full bg-[var(--ghost-white)] transform transition duration-300 ease-in-out rounded-2xl mb-1 "></span>
+                    <span id="line2" class="block h-1 w-full bg-[var(--ghost-white)] transform transition duration-300 ease-in-out rounded-2xl mb-1"></span>
+                    <span id="line3" class="block h-1 w-full bg-[var(--ghost-white)] transform transition duration-300 ease-in-out rounded-2xl"></span>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Navigation Content -->
-        <div id="mobile-menu" class="md:hidden h-0 overflow-hidden transition-all duration-300 ease-in-out">
-            <div class="pt-2 pb-4 space-y-1">
-                <a href="#home" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Home</a>
-                <a href="#about" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">About</a>
-                <a href="#services" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Services</a>
-                <a href="#portfolio" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Portfolio</a>
-                <a href="#contact" class="mobile-nav-link block text-gray-300 hover:text-cyan-400 hover:bg-gray-800/50 px-4 py-2 rounded-md transition-colors duration-200">Contact</a>
-                <div class="px-4 pt-2">
-                    <button class="contact-btn w-full px-4 py-2 bg-gradient-to-r from-indigo-700 to-purple-700 rounded-lg text-white text-sm font-medium flex items-center justify-center gap-2 hover:from-indigo-600 hover:to-purple-600 transition-all duration-300">
-                        <span class="bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">Connect</span>
-                    </button>
+        <!-- Menu -->
+        <div id="menu__container" class="w-full h-auto z-60 left-0 top-0 px-6 flex flex-row flex-wrap justify-center items-center gap-3 mt-5" >
+            <a href="#" class="h-auto block w-full rounded-xl transition-all duration-150 hover:bg-[var(--uranian-blue)]/5 hover:border-1 hover:border-transparent hover:border-b-[var(--electric-violet)]/40">
+                <div id="menu__horario" class="p-3">
+                    <h3 class="text-[var(--ghost-white)] text-center">Horario</h3>
                 </div>
-            </div>
+            </a>
+            <a href="#" class="h-auto block w-full rounded-xl transition-all duration-150 hover:bg-[var(--uranian-blue)]/5 hover:border-1 hover:border-transparent hover:border-b-[var(--electric-violet)]/40">
+                <div class="p-3">
+                    <h3 class="text-[var(--ghost-white)] text-center">Contacto</h3>
+                </div>
+            </a>
+            <a href="#" class="h-auto block w-full rounded-xl transition-all duration-150 hover:bg-[var(--uranian-blue)]/5 hover:border-1 hover:border-transparent hover:border-b-[var(--electric-violet)]/40">
+                <div class="p-3">
+                    <h3 class="text-[var(--ghost-white)] text-center">Videojuegos</h3>
+                </div>
+            </a>
+            <a href="#" class="h-auto block w-full rounded-xl transition-all duration-150 hover:bg-[var(--uranian-blue)]/5 hover:border-1 hover:border-transparent hover:border-b-[var(--electric-violet)]/40">
+                <div class="p-3">
+                    <h3 class="text-[var(--ghost-white)] text-center">Redes</h3>
+                </div>
+            </a>
+            <a href="#" class="h-auto block w-full rounded-xl transition-all duration-150 bg-[var(--electric-violet)]/90 hover:border-1 hover:border-[var(--uranian-blue)]/50">
+                <div class="p-3">
+                    <h3 class="text-[var(--ghost-white)] text-center">Donar</h3>
+                </div>
+            </a>
         </div>
     </div>
 </nav>

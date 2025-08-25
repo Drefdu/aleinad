@@ -1,5 +1,5 @@
 ---
-import Navbar from '../components/Navbar.astro';
+import Navbar from "../components/Navbar.astro";
 ---
 
 <html lang="en">
@@ -12,8 +12,173 @@ import Navbar from '../components/Navbar.astro';
     <link rel="stylesheet" href="/src/styles/test.css" />
     <script src="/src/javascript/navbar.js" type="module"></script>
   </head>
-  <body class="min-h-screen w-full bg-[#020617] relative">
-    <div class="absolute inset-0 z-0 body__background-gradient"></div>
-    <Navbar></Navbar>
+  <body class="min-h-screen w-full bg-[var(--black)] relative">
+    <Navbar />
+
+    <div class="absolute inset-0 z-0">
+      <section class="h-130 w-full mt-35">
+        <div class="container px-6 mx-auto size-full">
+          <div class="home__banner size-full rounded-4xl flex flex-row shadow-violet-800 shadow-2xl">
+            <div class="text-[var(--ghost-white)] h-full flex flex-col justify-center items-center flex-1/6 z-10">
+              <h1 class="text-8xl font-bold text-start ml-75  w-full">Aleinad #Pizza</h1>
+              <div class="w-full ml-75 flex items-center gap-4 mt-5">
+                <button class="inline w-auto px-9 py-2 rounded-2xl transition-all duration-150 bg-[var(--electric-violet)]/90 border-1 border-[var(--electric-violet)]/90 hover:border-[var(--uranian-blue)]/50">Discord</button>
+                <button class="inline w-auto px-9 py-2 rounded-2xl transition-all duration-150 bg-[var(--electric-violet)]/90 border-1 border-[var(--electric-violet)]/90 hover:border-[var(--uranian-blue)]/50">Discord</button>
+              </div>
+            </div>
+            <div class="h-full flex-5/6 flex justify-end items-center z-10">
+              <img src="/public/images/aleinad_banner_home.png" alt="Aleinad #Pizza" class="h-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="h-auto w-full mt-35 ">
+        <div class="container px-6 mx-auto size-full">
+          <div>
+            <h2 class="archivo-black-regular text-4xl bg-gradient-to-r from-violet-500 to-[var(--electric-violet)] text-transparent w-auto inline-block bg-clip-text">Moderadores</h1>
+            <p class="text-[var(--ghost-white)]">Moderadores de Discord y Youtube</p>
+              
+            <div class="moderator__container w-full flex flex-row justify-center items-center mt-10 gap-6 overflow-hidden">
+              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+              </div>
+              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+              </div>
+              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+              </div>
+              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+              </div>
+              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+              </div>
+              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+              </div>
+              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+              </div>
+              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+              </div>
+              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+              </div>
+              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="h-130 w-full mt-25">
+        <div class="container px-6 mx-auto size-full">
+            <h2 class="archivo-black-regular text-4xl bg-gradient-to-r from-violet-500 to-[var(--electric-violet)] text-transparent w-auto inline-block bg-clip-text">Videojuegos</h1>
+            <p class="text-[var(--ghost-white)]">Videojuegos que me gustan jugar osi jsjs</p>
+            <div class="videogame__container w-3xl h-full bg-amber-950">
+              
+            </div>
+        </div>
+      </section>
+
+      <section class="h-130 w-full mt-25">
+        <div class="container px-6 mx-auto size-full">
+            <h2 class="archivo-black-regular text-4xl bg-gradient-to-r from-violet-500 to-[var(--electric-violet)] text-transparent w-auto inline-block bg-clip-text">Horario</h1>
+            <p class="text-[var(--ghost-white)]">Videojuegos que me gustan jugar osi jsjs</p>
+            <div class="videogame__container w-3xl h-full bg-amber-950">
+              
+            </div>
+        </div>
+      </section>
+
+      <section class="h-130 w-full mt-25">
+        <div class="container px-6 mx-auto size-full">
+            <h2 class="archivo-black-regular text-4xl bg-gradient-to-r from-violet-500 to-[var(--electric-violet)] text-transparent w-auto inline-block bg-clip-text">Redes</h1>
+            <p class="text-[var(--ghost-white)]">Videojuegos que me gustan jugar osi jsjs</p>
+            <div class="videogame__container w-3xl h-full bg-amber-950">
+              
+            </div>
+        </div>
+      </section>
+
+      <section class="h-130 w-full mt-25">
+        <div class="container px-6 mx-auto size-full">
+            <h2 class="archivo-black-regular text-4xl bg-gradient-to-r from-violet-500 to-[var(--electric-violet)] text-transparent w-auto inline-block bg-clip-text">Modelo</h1>
+            <p class="text-[var(--ghost-white)]">Videojuegos que me gustan jugar osi jsjs</p>
+            <div class="videogame__container w-3xl h-full bg-amber-950">
+              
+            </div>
+        </div>
+      </section>
+
+      <section class="h-130 w-full mt-25">
+        <div class="container px-6 mx-auto size-full">
+            <h2 class="archivo-black-regular text-4xl bg-gradient-to-r from-violet-500 to-[var(--electric-violet)] text-transparent w-auto inline-block bg-clip-text">Pizzatubers</h1>
+            <p class="text-[var(--ghost-white)]">Videojuegos que me gustan jugar osi jsjs</p>
+            <div class="videogame__container w-3xl h-full bg-amber-950">
+              
+            </div>
+        </div>
+      </section>
+
+      <section class="h-130 w-full mt-25">
+        <div class="container px-6 mx-auto size-full">
+            <h2 class="archivo-black-regular text-4xl bg-gradient-to-r from-violet-500 to-[var(--electric-violet)] text-transparent w-auto inline-block bg-clip-text">Galeria</h1>
+            <p class="text-[var(--ghost-white)]">Videojuegos que me gustan jugar osi jsjs</p>
+            <div class="videogame__container w-3xl h-full bg-amber-950">
+              
+            </div>
+        </div>
+      </section>
+
+      <section class="h-130 w-full mt-25">
+        <div class="container px-6 mx-auto size-full">
+            <h2 class="archivo-black-regular text-4xl bg-gradient-to-r from-violet-500 to-[var(--electric-violet)] text-transparent w-auto inline-block bg-clip-text">Contacto</h1>
+            <p class="text-[var(--ghost-white)]">Videojuegos que me gustan jugar osi jsjs</p>
+            <div class="videogame__container w-3xl h-full bg-amber-950">
+              
+            </div>
+        </div>
+      </section>
+
+      <section class="h-130 w-full mt-25">
+        <div class="container px-6 mx-auto size-full">
+            <h2 class="archivo-black-regular text-4xl bg-gradient-to-r from-violet-500 to-[var(--electric-violet)] text-transparent w-auto inline-block bg-clip-text">Donar</h1>
+            <p class="text-[var(--ghost-white)]">Videojuegos que me gustan jugar osi jsjs</p>
+            <div class="videogame__container w-3xl h-full bg-amber-950">
+              
+            </div>
+        </div>
+      </section>
+
+      <footer class="w-full h-100 bg-[var(--electric-violet)]/25 mt-55">
+
+      </footer>
+    </div>
   </body>
 </html>
