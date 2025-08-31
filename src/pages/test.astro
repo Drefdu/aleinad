@@ -11,11 +11,12 @@ import Navbar from "../components/Navbar.astro";
     <title>Aleinad #Pizza |Vtuber|</title>
     <link rel="stylesheet" href="/src/styles/test.css" />
     <script src="/src/javascript/navbar.js" type="module"></script>
+    <script src="/src/javascript/moderators.js" type="module"></script>
   </head>
   <body class="min-h-screen w-full bg-[var(--black)] relative">
     <Navbar />
 
-    <div class="absolute inset-0 z-0">
+    <div class="min-h-screen w-full relative inset-0 z-0 page__background">
       <section class="h-130 w-full mt-35">
         <div class="container px-6 mx-auto size-full">
           <div class="home__banner size-full rounded-4xl flex flex-row shadow-violet-800 shadow-2xl">
@@ -39,56 +40,87 @@ import Navbar from "../components/Navbar.astro";
             <h2 class="archivo-black-regular text-4xl bg-gradient-to-r from-violet-500 to-[var(--electric-violet)] text-transparent w-auto inline-block bg-clip-text">Moderadores</h1>
             <p class="text-[var(--ghost-white)]">Moderadores de Discord y Youtube</p>
               
-            <div class="moderator__container w-full flex flex-row justify-center items-center mt-10 gap-6 overflow-hidden">
-              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
-                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
-                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
-                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
-              </div>
-              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
-                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
-                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
-                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
-              </div>
-              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
-                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
-                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
-                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
-              </div>
-              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
-                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
-                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
-                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
-              </div>
-              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
-                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
-                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
-                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
-              </div>
-              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
-                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
-                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
-                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
-              </div>
-              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
-                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
-                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
-                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
-              </div>
-              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
-                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
-                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
-                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
-              </div>
-              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
-                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
-                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
-                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
-              </div>
-              <div class="moderator__card text-[var(--ghost-white)] w-45 h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
-                <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
-                <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
-                <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+            <div id="moderator-slider" class="w-full h-73 whitespace-nowrap flex items-center mt-10 relative">
+              <div id="moderator-slider-container" class="moderator__container flex whitespace-nowrap">
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div><div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
+                <div class="moderator__card text-[var(--ghost-white)] h-60 backdrop-blur-2xl flex flex-col justify-center items-center p-4">
+                  <img src="/public/images/drefdu.jpg" alt="" class="z-20 rounded-full size-30">
+                  <h5 class="z-20 mt-3 text-xl font-bold">Drefdu</h5>
+                  <p class="z-20 w-auto font-medium px-2 py-0.5 text-sm text-[var(--oxford-blue)] rounded-3xl mt-2 bg-[var(--patrulla)] text-nowrap">Patrulla Pepperoni</p>
+                </div>
               </div>
             </div>
 
