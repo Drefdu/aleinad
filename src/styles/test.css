@@ -1,0 +1,220 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --oxford-blue: hsla(217, 96%, 11%, 1);
+  --electric-violet: hsla(272, 100%, 50%, 1);
+  /* --black: rgb(0, 0, 0); */
+  --black: #080808;
+  --uranian-blue: hsla(204, 100%, 85%, 1);
+  --ghost-white: hsla(240, 100%, 98%, 1);
+  --glass-effect: blur(12px);
+  --patrulla: #0098ff;
+
+  --marquee-width: 100%;
+  --marquee-height: 40vh;
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.page__background {
+  background-image: radial-gradient(circle 500px at 50% 100px, rgba(139,92,246,0.4), transparent);
+}
+
+/* Navigation Bar Styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: var(--glass-effect);
+  -webkit-backdrop-filter: var(--glass-effect); /* For Safari */
+  z-index: 1000;
+  transition: var(--transition-normal);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+}
+
+#navbar.active {
+  height: 400px;
+}
+
+/* Navbar Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/*  Menu button animation */
+#menu__buton.active #line1 {
+  transform: translateY(6px) translateX(0px) rotate(45deg);
+}
+
+#menu__buton.active #line2 {
+  opacity: 0;
+}
+
+#menu__buton.active #line3 {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+.section__title {
+
+}
+
+.section__title-underline {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 4px;
+  margin: auto;
+  margin-top: 15px;
+  transition: all 200ms ease;
+  background-image: linear-gradient(to right, var(--color-purple-400), var(--color-purple-500), var(--electric-violet));
+  animation: underline 1.5s linear infinite;
+}
+
+@keyframes underline {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 150px;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.home__banner {
+  background-image: url("/public/images/habitacion_aleinad_normal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#banner #spiral {
+  position: absolute;
+  width: 90px;
+  z-index: 10;
+  bottom: -20%;
+  left: 5%;
+}
+
+.home__banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(to top, #000, transparent); */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.home__banner::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-image: linear-gradient(to top, #000, transparent);
+  z-index: 1;
+}
+
+.aleinad__banner-home {
+  filter: drop-shadow(2px -2px 2px rgb(250, 245, 243));
+}
+
+.moderator__card {
+  position: relative;
+  background-image: url("/public/images/drefdu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: turquoise;
+  border-radius: 1rem;
+}
+
+.moderator__card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  border-radius: 1rem;
+  z-index: 10;
+}
+
+
+/* Moderatos slider */
+
+.moderator__card {
+  margin: 0px 20px;
+}
+
+.moderator__container {
+  animation: moderators-slider 20s linear  infinite;
+} 
+
+#moderator-slider:hover .moderator__container{
+  animation-play-state: paused;
+}
+
+@keyframes moderators-slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#moderator-slider {
+  overflow-x: hidden;
+}
+
+#moderator-slider::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to right, #000, transparent);
+  width: 5%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+#moderator-slider::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to left, #000, transparent);
+  width: 5%;
+  height: 100%;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+
+.moderator__card:hover {
+  transform: scale(1.2);
+  transition: all 250ms ease-in-out;
+}

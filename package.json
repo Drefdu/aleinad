@@ -15,6 +15,7 @@
     "@tailwindcss/vite": "^4.1.8",
     "astro": "^5.9.1",
     "bootstrap-icons": "^1.13.1",
+    "motion": "^12.23.12",
     "tailwindcss": "^4.1.8",
     "vue": "^3.5.17"
   }
