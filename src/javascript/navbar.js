@@ -1,4 +1,3 @@
-
 let menuButton = document.getElementById('menu__buton');
 let navbar = document.getElementById('navbar');
 let toggleMenu = false;

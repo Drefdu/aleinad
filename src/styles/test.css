@@ -27,13 +27,7 @@
 }
 
 .page__background {
-  background-image: adial-gradient(
-    circle at 50% 50%,
-    rgba(58, 123, 255, 0.25) 0%,
-    rgba(100, 149, 237, 0.15) 25%,
-    rgba(123, 104, 238, 0.07) 35%,
-    transparent 50%
-  );
+  background-image: radial-gradient(circle 500px at 50% 100px, rgba(139,92,246,0.4), transparent);
 }
 
 /* Navigation Bar Styles */
@@ -143,8 +137,8 @@
   z-index: 1;
 }
 
-#aleinad__banner-home {
-  filter: drop-shadow(5px -5px 6px rgb(231, 102, 42));
+.aleinad__banner-home {
+  filter: drop-shadow(2px -2px 2px rgb(250, 245, 243));
 }
 
 .moderator__card {
