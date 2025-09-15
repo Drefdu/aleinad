@@ -1,6 +1,8 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import GoogleTag from "../components/GoogleTag.astro";
+import Analytics from '@vercel/analytics/astro'
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 import "../styles/test.css";
 ---
 
@@ -21,6 +23,8 @@ import "../styles/test.css";
 
   </head>
   <body class="w-full h-dvh bg-black relative overflow-x-hidden">
+    <Analytics/>
+    <SpeedInsights/>
     <Navbar />
     <section
       id="banner"
