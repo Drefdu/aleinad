@@ -1,4 +1,4 @@
-import { animate, inView, delay, spring, scroll } from "motion"
+import { animate, inView, delay, spring, scroll } from "https://esm.sh/motion@latest"
 
 // Banner text
 inView(".hi", (element) => {

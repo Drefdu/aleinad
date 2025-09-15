@@ -1,5 +1,6 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import GoogleTag from "../components/GoogleTag.astro";
 import "../styles/test.css";
 ---
 
@@ -10,21 +11,26 @@ import "../styles/test.css";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Aleinad Vtuber #Pizza</title>
-    <script src="/src/javascript/navbar.js" type="module"></script>
-    <script src="/src/javascript/moderators.js" type="module"></script>
-    <script src="/src/javascript/motion.js" type="module"></script>
+    <script src="/scripts/navbar.js" is:inline></script>
+    <script src="/scripts/moderators.js" is:inline></script>
+
+    <script type="module">
+      import "/scripts/motion.js";
+    </script>
+    <GoogleTag/>
+
   </head>
-  <body class="min-h-screen w-full bg-black relative overflow-x-hidden ">
+  <body class="w-full h-dvh bg-black relative overflow-x-hidden">
     <Navbar />
     <section
       id="banner"
-      class="w-full h-dvh relative home__banner flex items-start justify-center md:items-end md:justify-start"
+      class="size-full relative home__banner flex items-start justify-center md:items-end md:justify-start"
     >
       <div
-        class="z-10 relative text-center w-full h-full mt-30 md:mt-20 md:text-left mx-auto md:mx-20 flex flex-col items-center md:flex-row xl:pl-35 xl:pr:10"
+        class="z-10 relative text-center w-full h-full md:mt-20 md:text-left mx-auto md:mx-20 flex flex-col justify-center items-center md:flex-row xl:pl-35 xl:pr:10"
       >
         <div
-          class="flex flex-col lg:flex-row c-space w-full md:max-w-150 md:w-150 relative pt-25 md:pt-0"
+          class="flex flex-col lg:flex-row c-space w-full md:max-w-150 md:w-150 relative pt-30 md:pt-0"
         >
           <div class="relative px-2 md:px-0">
             <h1 class="text-4xl lg:text-5xl font-medium text-neutral-100 hi">
@@ -107,7 +113,7 @@ import "../styles/test.css";
           </div>
         </div>
         <div
-          class="flex-auto w-full md:w-fit flex justify-center items-start md:justify-end md:items-center"
+          class="md:flex-auto w-full md:w-fit flex justify-center items-start md:justify-end md:items-center"
         >
           <img
             src="/images/Logo Aleinad VT.png"
